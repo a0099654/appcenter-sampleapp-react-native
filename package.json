@@ -55,5 +55,15 @@
         "useBabelrc": true
       }
     }
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "/Users/vsts/Library/Developer/Xcode/DerivedData/AppCenterSample-hgkcsnlkrifupqcuzdcrmxzhijwd/Build/Intermediates.noindex/ArchiveIntermediates/AppCenterSample/InstallationBuildProductsLocation/Applications//AppCenterSample.app",
+        "build": "xcodebuild -project ios/AppCenterSample.xcodeproj -scheme AppCenterSample -configuration Debug -sdk iphonesimulator -derivedDataPath /Users/vsts/Library/Developer/Xcode/DerivedData",
+        "type": "ios.simulator",
+        "name": "iPhone 7"
+      }
+    }
   }
 }
