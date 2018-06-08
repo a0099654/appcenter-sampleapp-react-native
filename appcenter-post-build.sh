@@ -16,8 +16,6 @@ else
 fi
 
 # Steps to download detox
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 echo "Lets go.....🌻"
 brew tap wix/brew
 brew install applesimutils

@@ -7,6 +7,7 @@ then
 fi
 
 echo "Starting to install node"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install node@8.11.2
 
 
