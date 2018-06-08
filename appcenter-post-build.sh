@@ -15,6 +15,7 @@ else
     echo "Current branch is $APPCENTER_BRANCH"
 fi
 
+echo "Starting to get detox"
 # Steps to download detox
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update && brew install node
@@ -27,3 +28,4 @@ npm install -g detox-cli
 detox build
 
 detox test
+echo "Done"
