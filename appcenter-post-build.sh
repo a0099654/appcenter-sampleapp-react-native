@@ -22,7 +22,7 @@ brew update && brew install node
 brew tap wix/brew
 brew install applesimutils
 
-npm install -g detox-cli
+yarn global add detox-cli
 
 detox build
 
