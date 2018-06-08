@@ -6,4 +6,9 @@ then
     plutil -replace CFBundleName -string "\$(PRODUCT_NAME) Beta" $APPCENTER_SOURCE_DIRECTORY/MyApp/Info.plist
 fi
 
-brew update && brew install node
+echo "Starting to install node"
+brew install node@8.11.2
+
+
+
+
