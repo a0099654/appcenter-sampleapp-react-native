@@ -14,3 +14,16 @@ then
 else
     echo "Current branch is $APPCENTER_BRANCH"
 fi
+
+# Steps to download detox
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update && brew install node
+
+brew tap wix/brew
+brew install applesimutils
+
+npm install -g detox-cli
+
+detox build
+
+detox test
